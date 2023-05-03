@@ -1,7 +1,9 @@
 #include <stdio.h>
-int main() {
+#include <cs50.h>
+
+int main(void) {
    // printf() displays the string inside quotation
-   printf("Hello, World!\n");
-   return 0;
+   string name = get_string("What's your name");
+   printf("hello, %s\n", name);
 }
 
